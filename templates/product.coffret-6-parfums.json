@@ -1,0 +1,778 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "liquid_EfHkhq": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"main-product__block main-product__block-custom_liquid\">\n          <div class=\"m-product-text\">\n            <div class=\"main-product__block main-product__block-custom_liquid\">\n          <div class=\"m-product-text\">\n            <div class=\"main-product__block main-product__block-custom_liquid\">\n  <div class=\"m-product-text\">\n    <div class=\"product-info__liquid\">\n      <a class=\"image-size\" style=\"display: flex; align-items: center; gap: 8px;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0776/3751/7627/files/avis.png?v=1687213619\" alt=\"Étoiles\" width=\"63\" height=\"13\">\n        <span class=\"text-size\">Excellent <b>4.8/5</b> sur 3,380 avis</span>\n      </a>\n    </div>\n  </div>\n</div>\n          </div>\n        \n</div>\n          </div>\n        \n</div>"
+          }
+        },
+        "vendor_AEcDJx": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "image_UTc73B": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DE_2_2ad047e2-07a1-46b3-b386-252b4ca16ca3.jpg",
+            "alignment": "start",
+            "max_width": 390
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "disabled": true,
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "collapse_content": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "collapsible_text_LVVmVW": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "INGRÉDIENTS",
+            "content": "<p>Chaque parfum possède sa propre composition, mais voici l’essentiel :</p><ul><li><strong>Huiles essentielles premium</strong> → tenue longue et richesse olfactive<br/></li><li><strong>Bases alcool propres</strong> → application sûre et régulière<br/></li><li><strong>Blends travaillés avec précision</strong> → profils olfactifs proches des parfums de créateurs</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_text_rz8xyA": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "À PROPOS DE NOS PARFUMS",
+            "content": "<p>Nos fragrances sont élaborées avec des <strong>ingrédients premium</strong> et une attention extrême au détail.<br/><br/>Le résultat : les senteurs iconiques que tu aimes, <strong>sans l’étiquette à 300€</strong></p><ul><li><strong>Haute concentration en huiles</strong> = <strong>12h+</strong> de tenue<br/></li><li><strong>Ingrédients premium</strong> = une qualité qui rivalise avec les originaux<br/></li><li><strong>Simplicité, sérieux et transparence</strong> = pas de compromis<br/></li></ul><p>Sentir incroyable. Dépenser moins. Rester libre.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_4tNPft": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "NOTES OLFACTIVES",
+            "content": "<p>Chaque parfum raconte une histoire. Voici comment ils sont construits :</p><ul><li><strong>Notes de tête</strong> : la première impression — fraîches, lumineuses, accrocheuses<br/></li><li><strong>Notes de cœur</strong> : l’âme du parfum — épices chaudes, bois crémeux, verts profonds…<br/></li><li><strong>Notes de fond</strong> : ce qui reste — riche, profond, inoubliable (musc, ambre, bois…)<br/></li></ul><p>Chaque senteur a sa fiche détaillée, mais une chose reste constante :<br/><br/><strong>chaque parfum est travaillé en couches, comme les originaux que tu connais.</strong></p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_3whFpr": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "FAQ",
+            "content": "<p><strong>Q : Est-ce que vos parfums sentent vraiment comme les parfums de créateurs ?</strong><br/><br/><strong>R : Oui.</strong> Nos compositions sont travaillées pour reproduire les senteurs d’origine presque à l’identique. Même les passionnés ont du mal à faire la différence.</p><p><strong>Q : Pourquoi vos prix sont si bas ?</strong><br/><br/><strong>R : Parce que l’essentiel, c’est le parfum.</strong> En évitant les endorsements, le marketing exagéré et les marges surdimensionnées, nous rendons l’iconique accessible.</p><p><strong>Q : Combien de temps durent vos parfums ?</strong><br/><br/><strong>R : Longtemps.</strong> Grâce à une forte concentration en huiles parfumées, ils tiennent <strong>12h+</strong>. Du matin jusqu’au soir.</p><p><strong>Q : Et si je n’aime pas une senteur ?</strong><br/><br/><strong>R : Aucun souci.</strong> Nous proposons une <strong>garantie 100% satisfait ou remboursé</strong>. Si ça ne te plaît pas, on te rembourse. Sans question.</p><p><strong>Q : Vos produits sont-ils sûrs ?</strong><br/><br/><strong>R : Oui.</strong> Nous utilisons des ingrédients propres et de haute qualité, exempts de substances nocives.</p><p><strong>Q : Comment choisir le bon parfum ?</strong><br/><br/><strong>R : Tu peux commencer par les incontournables</strong> (ex : Baccarat Rouge 540, Aventus…) <strong>ou tester nos échantillons</strong> pour explorer tranquillement.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_bk8T6m": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "LIVRAISON, ECHANGES & RETOURS",
+            "content": "<p>Pour toute question concernant votre commande, veuillez nous écrire à <strong>contact@maisonquintessence.com</strong>. Nous sommes là pour vous aider !</p><p><strong>Échanges & Retours :</strong></p><p>Vous disposez de 30 jours à compter de la date d’expédition pour effectuer un retour ou un échange.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_EfHkhq",
+        "vendor_AEcDJx",
+        "title",
+        "badges",
+        "price",
+        "rating",
+        "image_UTc73B",
+        "payment_terms",
+        "separator",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "collapsible_text_LVVmVW",
+        "collapsible_text_rz8xyA",
+        "collapsible_text_4tNPft",
+        "collapsible_text_3whFpr",
+        "collapsible_text_bk8T6m"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "dots",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "trustpilot_VYXHyA": {
+      "type": "trustpilot",
+      "blocks": {
+        "review_dTbnaP": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "J’ai découvert Maison Quintessence sur Facebook et franchement, grosse surprise. J’ai pris l’équivalent de Baccarat Rouge 540 et la ressemblance est bluffante. Même tenue sur la peau, mêmes notes. À ce prix-là, c’est clairement une pépite.",
+            "author_name": "Sophie Montclar"
+          }
+        },
+        "review_mDGqwi": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Enfin une vraie alternative aux parfums de grandes maisons. J’utilise Dior Sauvage depuis des années et la version Maison Quintessence est très fidèle. Livraison rapide et parfum qui tient bien toute la journée.",
+            "author_name": "Julien Morelly"
+          }
+        },
+        "review_EzhBNE": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Très impressionnée par la qualité des fragrances. J’ai commandé celui qui sent comme YSL Black Opium et on retrouve bien le côté gourmand et intense. Pour le prix, je ne m’attendais pas à une telle qualité. J’en ai repris deux autres depuis.",
+            "author_name": "MARIE DUBOIS"
+          }
+        },
+        "review_YiNgYC": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Je cherchais une alternative à Bleu de Chanel sans perdre en élégance. Honnêtement, Maison Quintessence m’a bluffé. Même mes proches n’ont pas remarqué la différence. La tenue est excellente.",
+            "author_name": "Thomas Reynaud"
+          }
+        },
+        "review_zPdEpQ": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Excellent rapport qualité-prix. J’ai testé l’inspiration Kayali Vanilla 28 et le rendu est très fidèle, avec une vanille douce et bien équilibrée. Le parfum tient bien et ne devient pas écœurant.",
+            "author_name": "Claire Silvae"
+          }
+        },
+        "review_zmX44D": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "J’étais sceptique au début, mais après plusieurs jours d’utilisation, je suis convaincue. L’équivalent de Kayali – Eden Juicy Apple est frais, fruité et tient vraiment bien. Idéal pour changer de parfum sans se ruiner.",
+            "author_name": "Lina Reynaud"
+          }
+        },
+        "review_gdYd9H": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Service client très réactif et parfums de grande qualité. J’ai trouvé une excellente alternative à Ombre Nomade, habituellement vendu autour de 300€. La différence se fait surtout sur le prix, pas sur l’odeur. Un vrai coup de cœur.",
+            "author_name": "Alexandre Petit"
+          }
+        },
+        "review_L9UnrX": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Maison Quintessence a changé ma façon d’acheter mes parfums. J’ai choisi celui qui sent comme Kilian – Angels’ Share et le résultat est bluffant : chaleureux, gourmand et très élégant. J’ai déjà recommandé autour de moi.",
+            "author_name": "Sarah Morelly"
+          }
+        }
+      },
+      "block_order": [
+        "review_dTbnaP",
+        "review_mDGqwi",
+        "review_EzhBNE",
+        "review_YiNgYC",
+        "review_zPdEpQ",
+        "review_zmX44D",
+        "review_gdYd9H",
+        "review_L9UnrX"
+      ],
+      "name": "Avis Clients",
+      "settings": {
+        "section_title": "DÉCOUVREZ LES AVIS DE NOS CLIENTS",
+        "background_color": "#ffffff",
+        "card_background": "#f8f8f8",
+        "title_color": "#000000",
+        "text_color": "#333333",
+        "author_color": "#000000",
+        "star_color": "#00b67a",
+        "title_font_size": 24,
+        "title_font_weight": "700",
+        "text_font_size": 15,
+        "author_font_size": 12,
+        "author_font_weight": "700",
+        "section_padding_top": 30,
+        "section_padding_bottom": 0,
+        "card_border_radius": 8,
+        "enable_auto_scroll": true,
+        "auto_scroll_delay": 4000
+      }
+    },
+    "rich_text_imN6wB": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_TiaPfi": {
+          "type": "subheading",
+          "settings": {
+            "text": "NOS ENGAGEMENTS"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_TiaPfi"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "text_with_icons_mBF8EM": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_ncfcB9": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Umweltfreundlich_1.png",
+            "mobile_icon_width": 64,
+            "icon_width": 64,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "",
+            "content": "<p>RESPECTUEUX DE LA NATURE</p>"
+          }
+        },
+        "item_THdLcp": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Umweltfreundlich_3.png",
+            "mobile_icon_width": 64,
+            "icon_width": 64,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "",
+            "content": "<p>DÉVELOPPÉ PAR DES PARFUMEURS</p>"
+          }
+        },
+        "item_Mj9tJJ": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Umweltfreundlich_4.png",
+            "mobile_icon_width": 64,
+            "icon_width": 64,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "",
+            "content": "<p>ECORESPONSABLE</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_ncfcB9",
+        "item_THdLcp",
+        "item_Mj9tJJ"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h6",
+        "text_alignment": "center",
+        "icon_spacing": "small",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "tabsvs_b7zCQ7": {
+      "type": "TABSVS",
+      "blocks": {
+        "heading_WtPCmR": {
+          "type": "heading",
+          "settings": {
+            "text": "SENTEURS DE LUXE AU PRIX JUSTE",
+            "heading_tag": "h2",
+            "font_size": 32,
+            "mobile_font_size": 20,
+            "italic": false,
+            "use_gradient": true,
+            "gradient_start": "#121212",
+            "gradient_end": "#404040",
+            "heading_color": "#121212"
+          }
+        },
+        "subtitle_HtVyin": {
+          "type": "subtitle",
+          "settings": {
+            "text": "JUSQU’À 700 € D’ÉCONOMIES PAR AN",
+            "font_size": 17,
+            "font_weight": "400",
+            "subtitle_color": "#121212"
+          }
+        },
+        "text_row_Fwr9ai": {
+          "type": "text_row",
+          "settings": {
+            "feature_name": "Bleu de Chanel",
+            "primary_text": "39 €",
+            "competitor_text": "116 €"
+          }
+        },
+        "text_row_D7YwVn": {
+          "type": "text_row",
+          "settings": {
+            "feature_name": "Baccarat Rouge",
+            "primary_text": "39 €",
+            "competitor_text": "365 €"
+          }
+        },
+        "text_row_ReDgA3": {
+          "type": "text_row",
+          "settings": {
+            "feature_name": "Ombre Nomade",
+            "primary_text": "39 €",
+            "competitor_text": "375 €"
+          }
+        },
+        "text_row_jkkKHw": {
+          "type": "text_row",
+          "settings": {
+            "feature_name": "Black Opium",
+            "primary_text": "39 €",
+            "competitor_text": "149 €"
+          }
+        },
+        "text_row_yBV4r3": {
+          "type": "text_row",
+          "settings": {
+            "feature_name": "Lost Cherry",
+            "primary_text": "39 €",
+            "competitor_text": "434 €"
+          }
+        },
+        "text_row_rNTUm4": {
+          "type": "text_row",
+          "settings": {
+            "feature_name": "NOTRE COFFRET 6 PARFUMS",
+            "primary_text": "<h2>79 €</h2>",
+            "competitor_text": "<h2>780 €</h2>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WtPCmR",
+        "subtitle_HtVyin",
+        "text_row_Fwr9ai",
+        "text_row_D7YwVn",
+        "text_row_ReDgA3",
+        "text_row_jkkKHw",
+        "text_row_yBV4r3",
+        "text_row_rNTUm4"
+      ],
+      "name": "SS - Comparison table #29",
+      "settings": {
+        "primary_image": "shopify://shop_images/Maison_Logo_Full_White_4x_5ad12c82-9dee-478d-a9b8-c2d75df562b5.png",
+        "primary_title": "",
+        "primary_badge": "",
+        "competitor_title": "Autres Marques",
+        "competitor_badge": "",
+        "content_align": "center",
+        "content_align_mobile": "center",
+        "layout_direction": "heading_first_vertical",
+        "content_gap": 64,
+        "column_width": 140,
+        "column_radius": 16,
+        "row_padding": 16,
+        "image_width": 70,
+        "product_title_size": 18,
+        "feature_font_size": 15,
+        "feature_font_weight": "600",
+        "show_dividers": true,
+        "divider_thickness": 1,
+        "icon_size": 22,
+        "gradient_start": "#ffffff",
+        "gradient_end": "#f4f4f4",
+        "primary_column_use_gradient": true,
+        "primary_column_color": "#121212",
+        "primary_column_gradient_start": "#121212",
+        "primary_column_gradient_end": "#404040",
+        "primary_column_text_color": "#ffffff",
+        "feature_text_color": "#121212",
+        "competitor_text_color": "#121212",
+        "divider_color": "#e0e0e0",
+        "check_color": "#ffffff",
+        "cross_color": "#121212",
+        "cross_stroke_style": "transparent",
+        "badge_background": "#ffffff26",
+        "badge_icon_color": "#ffffff",
+        "padding_top": 60,
+        "padding_bottom": 16,
+        "padding_sides": 24,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 12,
+        "mobile_padding_sides": 16,
+        "width": "custom",
+        "content_width": 800,
+        "lazy": false
+      }
+    },
+    "scrolling_text_WYazQL": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "LONGUE TENUE‎ ‎ ‎ 100% NATUREL ‎ ‎ SENTEURS ICONIQUES",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 6,
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "text_gradient": ""
+      }
+    },
+    "chiffrescles_z8mDVk": {
+      "type": "chiffrescles",
+      "blocks": {
+        "stat_a3GaTj": {
+          "type": "stat",
+          "settings": {
+            "number": "93%",
+            "description": "Ont déclaré que nos parfums durent plus de 12 heures."
+          }
+        },
+        "stat_8nRJKK": {
+          "type": "stat",
+          "settings": {
+            "number": "96%",
+            "description": "Ont déclaré que leurs flacons sentent exactement comme les originaux."
+          }
+        },
+        "stat_afAkYU": {
+          "type": "stat",
+          "settings": {
+            "number": "94%",
+            "description": "Ont déclaré avoir reçu des compliments sur leur parfum."
+          }
+        },
+        "stat_EHDdQU": {
+          "type": "stat",
+          "settings": {
+            "number": "91%",
+            "description": "Ont déclaré être revenus acheter plusieurs flacons."
+          }
+        }
+      },
+      "block_order": [
+        "stat_a3GaTj",
+        "stat_8nRJKK",
+        "stat_afAkYU",
+        "stat_EHDdQU"
+      ],
+      "name": "Chiffres clés",
+      "settings": {
+        "background_color": "#f7f7f7",
+        "title_color": "#1a1a1a",
+        "number_color": "#1a1a1a",
+        "description_color": "#1a1a1a",
+        "footnote_color": "#999999",
+        "main_image": "shopify://shop_images/image-gen_46_1_c4cd099f-d3a7-4ce8-ac8a-124dcabb1ac4.png",
+        "title": "Chiffres clés",
+        "footnote": "* Résultats obtenus à partir de plus de 10 000 enquêtes post-achat",
+        "button_text": "",
+        "button_link": "",
+        "button_bg": "#1a1a1a",
+        "button_color": "#ffffff"
+      }
+    },
+    "comparisontable_6CbNW6": {
+      "type": "comparisontable",
+      "blocks": {
+        "row_mKdxTk": {
+          "type": "row",
+          "settings": {
+            "label": "Parfums longue durée",
+            "brand_value": "check",
+            "brand_value_text": "+ de 12h",
+            "competitor_value": "cross",
+            "competitor_value_text": "~ 2 à 8h"
+          }
+        },
+        "row_xCghed": {
+          "type": "row",
+          "settings": {
+            "label": "identiques aux originaux",
+            "brand_value": "check",
+            "brand_value_text": "+ de 12h",
+            "competitor_value": "cross",
+            "competitor_value_text": "~ 2 à 8h"
+          }
+        },
+        "row_nTTM3a": {
+          "type": "row",
+          "settings": {
+            "label": "Sans danger pour la peau",
+            "brand_value": "check",
+            "brand_value_text": "+ de 12h",
+            "competitor_value": "cross",
+            "competitor_value_text": "~ 2 à 8h"
+          }
+        },
+        "row_VRPCX3": {
+          "type": "row",
+          "settings": {
+            "label": "satisfait ou remboursé",
+            "brand_value": "check",
+            "brand_value_text": "+ de 12h",
+            "competitor_value": "cross",
+            "competitor_value_text": "~ 2 à 8h"
+          }
+        }
+      },
+      "block_order": [
+        "row_mKdxTk",
+        "row_xCghed",
+        "row_nTTM3a",
+        "row_VRPCX3"
+      ],
+      "name": "Tableau Comparatif",
+      "settings": {
+        "title": "NOTRE DIFFÉRENCE",
+        "background_color": "#ffffff",
+        "title_color": "#000000",
+        "brand_logo": "shopify://shop_images/Maison_Logo_Full_White_4x_5ad12c82-9dee-478d-a9b8-c2d75df562b5.png",
+        "brand_name": "MAISON QUINTESSENCE",
+        "brand_column_bg": "#000000",
+        "brand_column_color": "#ffffff",
+        "competitor_name": "AUTRES",
+        "competitor_column_bg": "#ffffff",
+        "competitor_column_color": "#000000",
+        "label_bg": "#ffffff",
+        "label_color": "#000000",
+        "check_color": "#ffffff",
+        "cross_color": "#000000"
+      }
+    },
+    "faq_CQ9dyd": {
+      "type": "faq",
+      "blocks": {
+        "item_f8JT8p": {
+          "type": "item",
+          "settings": {
+            "title": "Quelle est la différence entre vos parfums et les grandes marques de luxe ?",
+            "content": "<p>Nos parfums s'inspirent des plus grandes fragrances de luxe avec des compositions olfactives similaires. La principale différence réside dans le prix : nous éliminons les coûts de marketing et de packaging somptueux pour vous offrir une qualité exceptionnelle à un tarif accessible.</p>"
+          }
+        },
+        "item_e789jB": {
+          "type": "item",
+          "settings": {
+            "title": "Combien de temps tiennent vos parfums ?",
+            "content": "<p>Nos fragrances ont une tenue 12 heures en moyenne, comparable aux parfums premium. La longévité dépend de votre type de peau et des notes choisies. Les parfums boisés et orientaux ont généralement une meilleure tenue.</p>"
+          }
+        },
+        "item_kbD7xb": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je retourner un parfum si je ne suis pas satisfait(e) ?",
+            "content": "<p>Absolument ! Vous bénéficiez de 30 jours pour retourner votre commande si le produit ne vous convient pas, même ouvert. Votre satisfaction est notre priorité.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_f8JT8p",
+        "item_e789jB",
+        "item_kbD7xb"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "QUESTIONS FRÉQUENTES",
+        "title": "",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "scrolling_text_WKKXeU": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "Vous n’aimez pas l’odeur ? Remboursé.",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 7,
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "text_gradient": ""
+      }
+    },
+    "rich_text_tPd8TT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_eTjiVi": {
+          "type": "heading",
+          "settings": {
+            "text": "VOUS AIMEREZ AUSSI",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_eTjiVi"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 6,
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "trustpilot_VYXHyA",
+    "rich_text_imN6wB",
+    "text_with_icons_mBF8EM",
+    "tabsvs_b7zCQ7",
+    "scrolling_text_WYazQL",
+    "chiffrescles_z8mDVk",
+    "comparisontable_6CbNW6",
+    "faq_CQ9dyd",
+    "scrolling_text_WKKXeU",
+    "rich_text_tPd8TT",
+    "related-products"
+  ]
+}
