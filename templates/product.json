@@ -92,10 +92,22 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": false,
-            "atc_button_background": "",
+            "atc_button_background": "#077944",
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
+          }
+        },
+        "button_VWcGNz": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/coffret-6-parfums",
+            "text": "Passez au pack 6 flacons - 79 €",
+            "size": "lg",
+            "style": "fill",
+            "stretch": true,
+            "background": "",
+            "text_color": ""
           }
         },
         "collapsible_text_LVVmVW": {
@@ -163,6 +175,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "button_VWcGNz",
         "collapsible_text_LVVmVW",
         "collapsible_text_rz8xyA",
         "collapsible_text_4tNPft",
