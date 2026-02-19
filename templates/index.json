@@ -24,7 +24,7 @@
             "title": "",
             "heading_tag": "h0",
             "button_text": "DÉCOUVRIR",
-            "button_link": "shopify://products/coffret-6-parfums",
+            "button_link": "shopify://collections/nos-parfums",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
@@ -173,6 +173,34 @@
         "heading_gradient": "",
         "product_card_background": "",
         "product_card_text_color": ""
+      }
+    },
+    "rich_text_BYg6jK": {
+      "type": "rich-text",
+      "blocks": {
+        "button_NEbAmK": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "VOIR PLUS",
+            "url": "shopify://collections/nos-parfums",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_NEbAmK"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "rich_text_XPFyWF": {
@@ -344,34 +372,6 @@
         "button_link": "shopify://collections/nos-parfums",
         "button_bg": "#1a1a1a",
         "button_color": "#ffffff"
-      }
-    },
-    "rich_text_BYg6jK": {
-      "type": "rich-text",
-      "blocks": {
-        "button_NEbAmK": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "xl",
-            "text": "VOIR PLUS",
-            "url": "shopify://collections/nos-parfums",
-            "background": "",
-            "text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "button_NEbAmK"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "rich_text_KNjwzm": {
