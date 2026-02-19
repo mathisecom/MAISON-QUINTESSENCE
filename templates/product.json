@@ -18,6 +18,10 @@
             "liquid": "<div class=\"main-product__block main-product__block-custom_liquid\">\n          <div class=\"m-product-text\">\n            <div class=\"main-product__block main-product__block-custom_liquid\">\n          <div class=\"m-product-text\">\n            <div class=\"main-product__block main-product__block-custom_liquid\">\n  <div class=\"m-product-text\">\n    <div class=\"product-info__liquid\">\n      <a class=\"image-size\" style=\"display: flex; align-items: center; gap: 8px;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0776/3751/7627/files/avis.png?v=1687213619\" alt=\"Étoiles\" width=\"63\" height=\"13\">\n        <span class=\"text-size\">Excellent <b>4.8/5</b> sur 3,380 avis</span>\n      </a>\n    </div>\n  </div>\n</div>\n          </div>\n        \n</div>\n          </div>\n        \n</div>"
           }
         },
+        "vendor_AEcDJx": {
+          "type": "vendor",
+          "settings": {}
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -93,10 +97,21 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
+        },
+        "collapsible_text_LVVmVW": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "INGRÉDIENTS",
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "liquid_EfHkhq",
+        "vendor_AEcDJx",
         "title",
         "badges",
         "price",
@@ -107,7 +122,8 @@
         "description",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "collapsible_text_LVVmVW"
       ],
       "settings": {
         "full_width": true,
@@ -127,19 +143,44 @@
         "input_text_color": ""
       }
     },
+    "rich_text_tPd8TT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_eTjiVi": {
+          "type": "heading",
+          "settings": {
+            "text": "VOUS AIMEREZ AUSSI",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_eTjiVi"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "related-products": {
       "type": "related-products",
-      "disabled": true,
       "settings": {
         "recommendations_count": 6,
         "products": [],
         "full_width": true,
-        "stack_products": true,
-        "show_progress_bar": false,
+        "stack_products": false,
+        "show_progress_bar": true,
         "products_per_row_mobile": "1",
         "products_per_row_desktop": 3,
         "subheading": "",
-        "title": "You may also like",
+        "title": "",
         "content": "",
         "background": "",
         "background_gradient": "",
@@ -153,6 +194,7 @@
   },
   "order": [
     "main",
+    "rich_text_tPd8TT",
     "related-products"
   ]
 }
