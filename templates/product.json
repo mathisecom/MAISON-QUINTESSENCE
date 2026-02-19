@@ -220,9 +220,9 @@
       "name": "FAQ",
       "settings": {
         "full_width": true,
-        "subheading": "FAQ",
-        "title": "Questions Fréquentes",
-        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
+        "subheading": "QUESTIONS FRÉQUENTES",
+        "title": "",
+        "content": "",
         "team_avatar_width": 160,
         "support_hours": "",
         "answer_time": "",
