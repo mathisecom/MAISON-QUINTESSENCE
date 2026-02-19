@@ -1,0 +1,377 @@
+{% comment %}
+  Section: Chiffres clés (Key Numbers)
+  Compatible: Desktop & Mobile Responsive
+  Fully customizable: background, text, colors, images
+{% endcomment %}
+
+<style>
+  .key-numbers {
+    padding: 80px 20px;
+    background-color: {{ section.settings.background_color }};
+  }
+
+  .key-numbers__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .key-numbers__image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .key-numbers__main-image {
+    max-width: 100%;
+    width: 450px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .key-numbers__content {
+    flex: 1;
+  }
+
+  .key-numbers__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: {{ section.settings.title_color }};
+    margin-bottom: 40px;
+    line-height: 1.2;
+  }
+
+  .key-numbers__stats {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .key-numbers__stat {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .key-numbers__stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: {{ section.settings.number_color }};
+    min-width: 150px;
+  }
+
+  .key-numbers__stat-description {
+    font-size: 1.1rem;
+    color: {{ section.settings.description_color }};
+    line-height: 1.6;
+  }
+
+  .key-numbers__footnote {
+    margin-top: 40px;
+    font-size: 0.875rem;
+    color: {{ section.settings.footnote_color }};
+    font-style: italic;
+  }
+
+  .key-numbers__cta {
+    margin-top: 40px;
+    display: inline-block;
+  }
+
+  .key-numbers__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 40px;
+    background-color: {{ section.settings.button_bg }};
+    color: {{ section.settings.button_color }};
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+
+  .key-numbers__button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    opacity: 0.9;
+  }
+
+  .key-numbers__button svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 968px) {
+    .key-numbers__container {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .key-numbers__title {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .key-numbers__main-image {
+      width: 400px;
+    }
+
+    .key-numbers__cta {
+      text-align: center;
+      width: 100%;
+    }
+
+    .key-numbers__button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .key-numbers {
+      padding: 60px 20px;
+    }
+
+    .key-numbers__container {
+      gap: 40px;
+    }
+
+    .key-numbers__title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .key-numbers__main-image {
+      width: 380px;
+    }
+
+    .key-numbers__stat {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .key-numbers__stat-number {
+      font-size: 2rem;
+      min-width: auto;
+    }
+
+    .key-numbers__stat-description {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .key-numbers {
+      padding: 40px 15px;
+    }
+
+    .key-numbers__title {
+      font-size: 1.75rem;
+    }
+
+    .key-numbers__main-image {
+      width: 320px;
+    }
+
+    .key-numbers__stat-number {
+      font-size: 1.75rem;
+    }
+  }
+</style>
+
+<section class="key-numbers">
+  <div class="key-numbers__container">
+    <!-- Image Section -->
+    <div class="key-numbers__image-section">
+      {% if section.settings.main_image != blank %}
+        <img 
+          src="{{ section.settings.main_image | img_url: '800x' }}" 
+          alt="{{ section.settings.title }}"
+          class="key-numbers__main-image"
+          loading="lazy"
+        >
+      {% endif %}
+    </div>
+
+    <!-- Content Section -->
+    <div class="key-numbers__content">
+      <h2 class="key-numbers__title">{{ section.settings.title }}</h2>
+
+      <div class="key-numbers__stats">
+        {% for block in section.blocks %}
+          <div class="key-numbers__stat">
+            <div class="key-numbers__stat-number">{{ block.settings.number }}</div>
+            <div class="key-numbers__stat-description">{{ block.settings.description }}</div>
+          </div>
+        {% endfor %}
+      </div>
+
+      {% if section.settings.footnote != blank %}
+        <div class="key-numbers__footnote">{{ section.settings.footnote }}</div>
+      {% endif %}
+
+      {% if section.settings.button_text != blank %}
+        <div class="key-numbers__cta">
+          <a href="{{ section.settings.button_link }}" class="key-numbers__button">
+            {{ section.settings.button_text }}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+            </svg>
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Chiffres clés",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Couleurs générales"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#F5F3EF"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "number_color",
+      "label": "Couleur des chiffres",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Couleur des descriptions",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "footnote_color",
+      "label": "Couleur de la note",
+      "default": "#999999"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Image principale"
+    },
+    {
+      "type": "header",
+      "content": "Contenu principal"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre",
+      "default": "Chiffres clés"
+    },
+    {
+      "type": "textarea",
+      "id": "footnote",
+      "label": "Note en bas",
+      "default": "*Exemple pris pour une famille de 4 personnes consommant exclusivement de l'eau en bouteille"
+    },
+    {
+      "type": "header",
+      "content": "Bouton d'action"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Texte du bouton",
+      "default": "Tester Pureva"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Lien du bouton"
+    },
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Couleur fond bouton",
+      "default": "#D4F1F4"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Couleur texte bouton",
+      "default": "#1a1a1a"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Statistique",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Chiffre",
+          "default": "500€"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Jusqu'à 500 € d'économies par an"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Chiffres clés",
+      "blocks": [
+        {
+          "type": "stat",
+          "settings": {
+            "number": "500€",
+            "description": "Jusqu'à 500 € d'économies par an"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": "500",
+            "description": "Fini le plastique jetable – jusqu'à 500 bouteilles évitées*"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": "2 min",
+            "description": "Installation simple en 2 min, sans outil"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
