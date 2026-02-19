@@ -43,7 +43,7 @@
         "full_width": true,
         "allow_transparent_header": true,
         "show_initial_transition": false,
-        "image_size": "md",
+        "image_size": "lg",
         "controls_type": "dots",
         "transition_type": "fade_with_text",
         "autoplay": false,
@@ -332,7 +332,7 @@
       ],
       "name": "Chiffres clés",
       "settings": {
-        "background_color": "#F5F3EF",
+        "background_color": "#f5f3ef",
         "title_color": "#1a1a1a",
         "number_color": "#1a1a1a",
         "description_color": "#1a1a1a",
