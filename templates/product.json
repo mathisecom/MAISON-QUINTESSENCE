@@ -25,7 +25,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "heading_tag": "h2"
+            "heading_tag": "h3"
           }
         },
         "badges": {
@@ -50,7 +50,7 @@
           "settings": {
             "image": "shopify://shop_images/DE_2_2ad047e2-07a1-46b3-b386-252b4ca16ca3.jpg",
             "alignment": "start",
-            "max_width": 310
+            "max_width": 330
           }
         },
         "payment_terms": {
