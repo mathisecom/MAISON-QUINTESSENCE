@@ -187,6 +187,105 @@
         "input_text_color": ""
       }
     },
+    "trustpilot_VYXHyA": {
+      "type": "trustpilot",
+      "blocks": {
+        "review_dTbnaP": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "J’ai découvert Maison Quintessence sur Facebook et franchement, grosse surprise. J’ai pris l’équivalent de Baccarat Rouge 540 et la ressemblance est bluffante. Même tenue sur la peau, mêmes notes. À ce prix-là, c’est clairement une pépite.",
+            "author_name": "Sophie Montclar"
+          }
+        },
+        "review_mDGqwi": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Enfin une vraie alternative aux parfums de grandes maisons. J’utilise Dior Sauvage depuis des années et la version Maison Quintessence est très fidèle. Livraison rapide et parfum qui tient bien toute la journée.",
+            "author_name": "Julien Morelly"
+          }
+        },
+        "review_EzhBNE": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Très impressionnée par la qualité des fragrances. J’ai commandé celui qui sent comme YSL Black Opium et on retrouve bien le côté gourmand et intense. Pour le prix, je ne m’attendais pas à une telle qualité. J’en ai repris deux autres depuis.",
+            "author_name": "MARIE DUBOIS"
+          }
+        },
+        "review_YiNgYC": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Je cherchais une alternative à Bleu de Chanel sans perdre en élégance. Honnêtement, Maison Quintessence m’a bluffé. Même mes proches n’ont pas remarqué la différence. La tenue est excellente.",
+            "author_name": "Thomas Reynaud"
+          }
+        },
+        "review_zPdEpQ": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Excellent rapport qualité-prix. J’ai testé l’inspiration Kayali Vanilla 28 et le rendu est très fidèle, avec une vanille douce et bien équilibrée. Le parfum tient bien et ne devient pas écœurant.",
+            "author_name": "Claire Silvae"
+          }
+        },
+        "review_zmX44D": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "J’étais sceptique au début, mais après plusieurs jours d’utilisation, je suis convaincue. L’équivalent de Kayali – Eden Juicy Apple est frais, fruité et tient vraiment bien. Idéal pour changer de parfum sans se ruiner.",
+            "author_name": "Lina Reynaud"
+          }
+        },
+        "review_gdYd9H": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Service client très réactif et parfums de grande qualité. J’ai trouvé une excellente alternative à Ombre Nomade, habituellement vendu autour de 300€. La différence se fait surtout sur le prix, pas sur l’odeur. Un vrai coup de cœur.",
+            "author_name": "Alexandre Petit"
+          }
+        },
+        "review_L9UnrX": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Maison Quintessence a changé ma façon d’acheter mes parfums. J’ai choisi celui qui sent comme Kilian – Angels’ Share et le résultat est bluffant : chaleureux, gourmand et très élégant. J’ai déjà recommandé autour de moi.",
+            "author_name": "Sarah Morelly"
+          }
+        }
+      },
+      "block_order": [
+        "review_dTbnaP",
+        "review_mDGqwi",
+        "review_EzhBNE",
+        "review_YiNgYC",
+        "review_zPdEpQ",
+        "review_zmX44D",
+        "review_gdYd9H",
+        "review_L9UnrX"
+      ],
+      "name": "Avis Clients",
+      "settings": {
+        "section_title": "DÉCOUVREZ LES AVIS DE NOS CLIENTS",
+        "background_color": "#ffffff",
+        "card_background": "#f8f8f8",
+        "title_color": "#000000",
+        "text_color": "#333333",
+        "author_color": "#000000",
+        "star_color": "#00b67a",
+        "title_font_size": 24,
+        "title_font_weight": "700",
+        "text_font_size": 15,
+        "author_font_size": 12,
+        "author_font_weight": "700",
+        "section_padding_top": 30,
+        "section_padding_bottom": 0,
+        "card_border_radius": 8,
+        "enable_auto_scroll": true,
+        "auto_scroll_delay": 4000
+      }
+    },
     "text_with_icons_mBF8EM": {
       "type": "text-with-icons",
       "blocks": {
@@ -355,6 +454,7 @@
   },
   "order": [
     "main",
+    "trustpilot_VYXHyA",
     "text_with_icons_mBF8EM",
     "faq_CQ9dyd",
     "rich_text_tPd8TT",
