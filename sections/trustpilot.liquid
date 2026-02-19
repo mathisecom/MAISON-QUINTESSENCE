@@ -1,0 +1,500 @@
+{% comment %}
+  Section: Customer Reviews Carousel
+  Fully customizable testimonials section with responsive design
+{% endcomment %}
+
+<style>
+  .customer-reviews-section {
+    padding: {{ section.settings.section_padding_top }}px 20px {{ section.settings.section_padding_bottom }}px;
+    background-color: {{ section.settings.background_color }};
+  }
+
+  .reviews-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .reviews-title {
+    text-align: center;
+    font-size: {{ section.settings.title_font_size }}px;
+    font-weight: {{ section.settings.title_font_weight }};
+    color: {{ section.settings.title_color }};
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .reviews-carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  .reviews-grid {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    padding: 10px 0;
+  }
+
+  .reviews-grid::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .review-card {
+    background-color: {{ section.settings.card_background }};
+    padding: 40px 30px;
+    border-radius: {{ section.settings.card_border_radius }}px;
+    transition: transform 0.3s ease;
+    min-width: 300px;
+    flex: 0 0 calc(25% - 22.5px); /* 4 cards on desktop */
+  }
+
+  .review-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .stars {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+
+  .star {
+    color: {{ section.settings.star_color }};
+    font-size: 20px;
+  }
+
+  .review-text {
+    font-size: {{ section.settings.text_font_size }}px;
+    line-height: 1.6;
+    color: {{ section.settings.text_color }};
+    margin-bottom: 20px;
+  }
+
+  .review-author {
+    font-weight: {{ section.settings.author_font_weight }};
+    font-size: {{ section.settings.author_font_size }}px;
+    color: {{ section.settings.author_color }};
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 1024px) {
+    .review-card {
+      flex: 0 0 calc(50% - 15px); /* 2 cards on tablet */
+      min-width: 280px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .review-card {
+      flex: 0 0 calc(100% - 30px); /* 1 card on mobile */
+      min-width: 260px;
+    }
+
+    .reviews-title {
+      font-size: {{ section.settings.title_font_size | minus: 8 }}px;
+      margin-bottom: 30px;
+    }
+
+    .review-card {
+      padding: 30px 20px;
+    }
+
+    .customer-reviews-section {
+      padding: {{ section.settings.section_padding_top | divided_by: 2 }}px 15px {{ section.settings.section_padding_bottom | divided_by: 2 }}px;
+    }
+
+    .reviews-grid {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .reviews-title {
+      font-size: {{ section.settings.title_font_size | minus: 12 }}px;
+    }
+
+    .review-text {
+      font-size: {{ section.settings.text_font_size | minus: 2 }}px;
+    }
+
+    .review-card {
+      min-width: 240px;
+    }
+  }
+</style>
+
+<section class="customer-reviews-section">
+  <div class="reviews-container">
+    <h2 class="reviews-title">{{ section.settings.section_title }}</h2>
+    
+    <div class="reviews-carousel-wrapper">
+      <div class="reviews-grid" id="reviews-grid-{{ section.id }}">
+        {% for block in section.blocks %}
+          <div class="review-card" {{ block.shopify_attributes }}>
+            <div class="stars">
+              {% for i in (1..block.settings.star_rating) %}
+                <span class="star">★</span>
+              {% endfor %}
+            </div>
+            <p class="review-text">{{ block.settings.review_text }}</p>
+            <p class="review-author">{{ block.settings.author_name }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function() {
+    const carousel{{ section.id }} = document.getElementById('reviews-grid-{{ section.id }}');
+    const totalSlides{{ section.id }} = {{ section.blocks.size }};
+    let currentSlide{{ section.id }} = 0;
+    let autoScrollInterval{{ section.id }} = null;
+    let isUserScrolling{{ section.id }} = false;
+    let scrollTimeout{{ section.id }} = null;
+
+    // Get the width of one card plus gap
+    function getScrollDistance() {
+      const card = carousel{{ section.id }}.querySelector('.review-card');
+      if (!card) return 0;
+      const cardWidth = card.offsetWidth;
+      const gap = 30;
+      return cardWidth + gap;
+    }
+
+    // Next slide (for auto-scroll)
+    function nextSlide() {
+      isUserScrolling{{ section.id }} = true;
+      currentSlide{{ section.id }} = (currentSlide{{ section.id }} + 1) % totalSlides{{ section.id }};
+      
+      const scrollDistance = getScrollDistance();
+      carousel{{ section.id }}.scrollTo({
+        left: scrollDistance * currentSlide{{ section.id }},
+        behavior: 'smooth'
+      });
+      
+      setTimeout(() => {
+        isUserScrolling{{ section.id }} = false;
+      }, 500);
+    }
+
+    // Start auto-scroll
+    function startAutoScroll() {
+      if (autoScrollInterval{{ section.id }}) return;
+      
+      autoScrollInterval{{ section.id }} = setInterval(() => {
+        if (!isUserScrolling{{ section.id }}) {
+          nextSlide();
+        }
+      }, {{ section.settings.auto_scroll_delay }});
+    }
+
+    // Stop auto-scroll
+    function stopAutoScroll() {
+      if (autoScrollInterval{{ section.id }}) {
+        clearInterval(autoScrollInterval{{ section.id }});
+        autoScrollInterval{{ section.id }} = null;
+      }
+    }
+
+    // Detect user scrolling
+    carousel{{ section.id }}.addEventListener('scroll', function() {
+      isUserScrolling{{ section.id }} = true;
+      
+      if (scrollTimeout{{ section.id }}) {
+        clearTimeout(scrollTimeout{{ section.id }});
+      }
+      
+      scrollTimeout{{ section.id }} = setTimeout(() => {
+        isUserScrolling{{ section.id }} = false;
+      }, 1500);
+    });
+
+    // Pause on hover
+    carousel{{ section.id }}.addEventListener('mouseenter', stopAutoScroll);
+    carousel{{ section.id }}.addEventListener('mouseleave', function() {
+      if ({{ section.settings.enable_auto_scroll | json }}) {
+        startAutoScroll();
+      }
+    });
+
+    // Initialize auto-scroll if enabled
+    if ({{ section.settings.enable_auto_scroll | json }}) {
+      startAutoScroll();
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Avis Clients",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Titre de la section",
+      "default": "DÉCOUVREZ LES AVIS DE NOS CLIENTS"
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Fond des cartes",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "author_color",
+      "label": "Couleur du nom auteur",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Couleur des étoiles",
+      "default": "#FF9966"
+    },
+    {
+      "type": "header",
+      "content": "Typographie"
+    },
+    {
+      "type": "range",
+      "id": "title_font_size",
+      "label": "Taille titre",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "default": 24,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "title_font_weight",
+      "label": "Poids titre",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "600", "label": "Semi-Bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "900", "label": "Black" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "range",
+      "id": "text_font_size",
+      "label": "Taille texte avis",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 15,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "author_font_size",
+      "label": "Taille nom auteur",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "default": 12,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "author_font_weight",
+      "label": "Poids nom auteur",
+      "options": [
+        { "value": "600", "label": "Semi-Bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "900", "label": "Black" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "header",
+      "content": "Espacements"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Padding haut",
+      "min": 0,
+      "max": 150,
+      "step": 10,
+      "default": 60,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Padding bas",
+      "min": 0,
+      "max": 150,
+      "step": 10,
+      "default": 60,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Arrondi des cartes",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "default": 8,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Défilement automatique"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_auto_scroll",
+      "label": "Activer défilement automatique",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "auto_scroll_delay",
+      "label": "Délai défilement auto (ms)",
+      "min": 2000,
+      "max": 5000,
+      "step": 500,
+      "default": 4000,
+      "unit": "ms",
+      "info": "Temps entre chaque changement automatique"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Avis Client",
+      "settings": [
+        {
+          "type": "range",
+          "id": "star_rating",
+          "label": "Nombre d'étoiles",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "review_text",
+          "label": "Texte de l'avis",
+          "default": "J'ai plusieurs bougies Lumond et je suis à chaque fois impressionné par leur qualité et merveilleux parfum."
+        },
+        {
+          "type": "text",
+          "id": "author_name",
+          "label": "Nom de l'auteur",
+          "default": "GABRIEL LEROY"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Avis Clients",
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "J'ai découvert Maison Quintessence par hasard et je ne suis pas déçue ! Le parfum ressemble énormément à mon parfum de luxe préféré pour un prix imbattable. La tenue est excellente.",
+            "author_name": "SOPHIE MARTIN"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Enfin une alternative accessible aux grands parfums ! La qualité est au rendez-vous, les notes sont fidèles et la livraison ultra rapide. Je recommande sans hésiter.",
+            "author_name": "JULIEN BERNARD"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Impressionnée par la qualité des fragrances ! On sent vraiment les notes de tête, cœur et fond. Pour le prix, c'est vraiment exceptionnel. J'en ai commandé 3 d'un coup.",
+            "author_name": "MARIE DUBOIS"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Je cherchais une alternative à mon parfum de luxe habituel et Maison Quintessence m'a bluffé ! Même mes amis n'ont pas vu la différence. La tenue dure toute la journée.",
+            "author_name": "THOMAS LEROY"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Un rapport qualité-prix imbattable ! Les parfums sont élégants, raffinés et la composition est vraiment proche des grandes maisons. Maison Quintessence est devenue mon secret beauté.",
+            "author_name": "CLAIRE ROUSSEAU"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Sceptique au début, je suis maintenant conquise ! Les fragrances sont sophistiquées et tiennent très bien. Je peux enfin varier mes parfums sans me ruiner. Bravo !",
+            "author_name": "ÉMILIE LAURENT"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Service client au top et produits de qualité ! J'ai trouvé l'équivalent parfait de mon parfum préféré à 200€. La différence de prix est énorme mais pas la qualité. Un vrai coup de cœur.",
+            "author_name": "ALEXANDRE PETIT"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "review_text": "Maison Quintessence a changé ma routine parfum ! Des fragrances luxueuses et accessibles, une tenue longue durée et des flacons élégants. C'est mon nouveau shop de référence.",
+            "author_name": "CAMILLE MOREAU"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
