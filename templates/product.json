@@ -548,6 +548,22 @@
         "accordion_text_color": ""
       }
     },
+    "scrolling_text_WKKXeU": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "Vous n’aimez pas l’odeur ? Remboursé.",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 7,
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "text_gradient": ""
+      }
+    },
     "rich_text_tPd8TT": {
       "type": "rich-text",
       "blocks": {
@@ -605,6 +621,7 @@
     "chiffrescles_z8mDVk",
     "comparisontable_6CbNW6",
     "faq_CQ9dyd",
+    "scrolling_text_WKKXeU",
     "rich_text_tPd8TT",
     "related-products"
   ]
