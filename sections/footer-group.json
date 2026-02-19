@@ -79,9 +79,9 @@
           "settings": {
             "image": "shopify://shop_images/Maison_Logo_Full_White_4x_5ad12c82-9dee-478d-a9b8-c2d75df562b5.png",
             "image_width": 120,
-            "heading_size": "h3",
-            "title": "Sign up for new stories and personal offers",
-            "content": ""
+            "heading_size": "h6",
+            "title": "Rejoins-nous",
+            "content": "<p>Découvrez nos nouveautés, recevez nos actualités et des attentions exclusives.</p>"
           }
         },
         "links": {
