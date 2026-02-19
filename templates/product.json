@@ -187,6 +187,59 @@
         "input_text_color": ""
       }
     },
+    "faq_CQ9dyd": {
+      "type": "faq",
+      "blocks": {
+        "item_f8JT8p": {
+          "type": "item",
+          "settings": {
+            "title": "Quelle est la différence entre vos parfums et les grandes marques de luxe ?",
+            "content": "<p>Nos parfums s'inspirent des plus grandes fragrances de luxe avec des compositions olfactives similaires. La principale différence réside dans le prix : nous éliminons les coûts de marketing et de packaging somptueux pour vous offrir une qualité exceptionnelle à un tarif accessible.</p>"
+          }
+        },
+        "item_e789jB": {
+          "type": "item",
+          "settings": {
+            "title": "Combien de temps tiennent vos parfums ?",
+            "content": "<p>Nos fragrances ont une tenue 12 heures en moyenne, comparable aux parfums premium. La longévité dépend de votre type de peau et des notes choisies. Les parfums boisés et orientaux ont généralement une meilleure tenue.</p>"
+          }
+        },
+        "item_kbD7xb": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je retourner un parfum si je ne suis pas satisfait(e) ?",
+            "content": "<p>Absolument ! Vous bénéficiez de 30 jours pour retourner votre commande si le produit ne vous convient pas, même ouvert. Votre satisfaction est notre priorité.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_f8JT8p",
+        "item_e789jB",
+        "item_kbD7xb"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "FAQ",
+        "title": "Questions Fréquentes",
+        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "rich_text_tPd8TT": {
       "type": "rich-text",
       "blocks": {
@@ -238,6 +291,7 @@
   },
   "order": [
     "main",
+    "faq_CQ9dyd",
     "rich_text_tPd8TT",
     "related-products"
   ]
