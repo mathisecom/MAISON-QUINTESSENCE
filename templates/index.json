@@ -113,6 +113,39 @@
         "text_color": ""
       }
     },
+    "rich_text_XPFyWF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HApaxz": {
+          "type": "heading",
+          "settings": {
+            "text": "6 odeurs pour 79€",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_YnL8AT": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>L’OFFRE PARFAITE SI VOUS SOUHAITEZ DÉCOUVRIR DE NOUVEAUX PARFUMS.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HApaxz",
+        "richtext_YnL8AT"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "featured_product_eGCJwb": {
       "type": "featured-product",
       "blocks": {
@@ -123,10 +156,24 @@
             "heading_tag": "h2"
           }
         },
+        "text_UkrXgT": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>3 Parfums 50ml + 3 Échantillons 20ml au choix pour 79€!</strong></p><p>Chez <strong>Maison Quintessence</strong>, on recrée les profils olfactifs iconiques pour une expérience proche de l’original, sans payer pour un logo, une bouteille dorée ou du marketing inutile. Résultat : <strong>même aura, même compliments, prix honnête.</strong></p>"
+          }
+        },
         "quantity_selector_JYD3qn": {
           "type": "quantity_selector",
           "disabled": true,
           "settings": {}
+        },
+        "image_iCNdtk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DE_2_2ad047e2-07a1-46b3-b386-252b4ca16ca3.jpg",
+            "alignment": "start",
+            "max_width": 310
+          }
         },
         "button_H4DeFE": {
           "type": "button",
@@ -143,7 +190,9 @@
       },
       "block_order": [
         "title_Fy9L9p",
+        "text_UkrXgT",
         "quantity_selector_JYD3qn",
+        "image_iCNdtk",
         "button_H4DeFE"
       ],
       "name": "Featured product",
@@ -494,6 +543,7 @@
   "order": [
     "slideshow_cL8jYq",
     "text_with_icons_MgzRL8",
+    "rich_text_XPFyWF",
     "featured_product_eGCJwb",
     "rich_text_y4eeK8",
     "featured_collection_itpndr",
