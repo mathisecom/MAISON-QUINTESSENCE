@@ -187,6 +187,70 @@
         "input_text_color": ""
       }
     },
+    "text_with_icons_mBF8EM": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_ncfcB9": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Umweltfreundlich_1.png",
+            "mobile_icon_width": 64,
+            "icon_width": 64,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "",
+            "content": ""
+          }
+        },
+        "item_THdLcp": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Umweltfreundlich_3.png",
+            "mobile_icon_width": 64,
+            "icon_width": 64,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "",
+            "content": ""
+          }
+        },
+        "item_Mj9tJJ": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Umweltfreundlich_4.png",
+            "mobile_icon_width": 64,
+            "icon_width": 64,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_ncfcB9",
+        "item_THdLcp",
+        "item_Mj9tJJ"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "faq_CQ9dyd": {
       "type": "faq",
       "blocks": {
@@ -291,6 +355,7 @@
   },
   "order": [
     "main",
+    "text_with_icons_mBF8EM",
     "faq_CQ9dyd",
     "rich_text_tPd8TT",
     "related-products"
