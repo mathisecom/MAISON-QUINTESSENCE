@@ -286,6 +286,29 @@
         "auto_scroll_delay": 4000
       }
     },
+    "rich_text_imN6wB": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_TiaPfi": {
+          "type": "subheading",
+          "settings": {
+            "text": "NOS ENGAGEMENTS"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_TiaPfi"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "text_with_icons_mBF8EM": {
       "type": "text-with-icons",
       "blocks": {
@@ -342,9 +365,9 @@
         "full_width": true,
         "stack_on_mobile": false,
         "title": "",
-        "heading_tag": "h5",
+        "heading_tag": "h6",
         "text_alignment": "center",
-        "icon_spacing": "medium",
+        "icon_spacing": "small",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -455,6 +478,7 @@
   "order": [
     "main",
     "trustpilot_VYXHyA",
+    "rich_text_imN6wB",
     "text_with_icons_mBF8EM",
     "faq_CQ9dyd",
     "rich_text_tPd8TT",

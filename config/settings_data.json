@@ -41,7 +41,24 @@
     "favicon": "shopify://shop_images/CREA_1080X1080_-_2026-02-01T120642.372.jpg",
     "checkout_accent_color": "#f0c417",
     "checkout_button_color": "#1a1a1a",
-    "content_for_index": []
+    "content_for_index": [],
+    "blocks": {
+      "17198465164502963513": {
+        "type": "shopify://apps/parcelwill-parcel-panel/blocks/app.embed/fc785c3f-90e0-4c98-a20c-7cde9ba5e4b5",
+        "disabled": false,
+        "settings": {}
+      },
+      "11348531219507317188": {
+        "type": "shopify://apps/eb-easy-bundle-builder/blocks/app-embed/05b1325c-6303-4da5-8e2f-b13ab2a50e1a",
+        "disabled": false,
+        "settings": {}
+      },
+      "9696655121035291526": {
+        "type": "shopify://apps/rapi/blocks/app-embed/99617c17-a32b-4e70-a883-7a155610d032",
+        "disabled": true,
+        "settings": {}
+      }
+    }
   },
   "presets": {
     "Sound": {
