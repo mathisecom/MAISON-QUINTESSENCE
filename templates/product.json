@@ -443,8 +443,8 @@
           "type": "text_row",
           "settings": {
             "feature_name": "NOTRE COFFRET 6 PARFUMS",
-            "primary_text": "79 €",
-            "competitor_text": "<h1>780 €</h1>"
+            "primary_text": "<h2>79 €</h2>",
+            "competitor_text": "<h2>780 €</h2>"
           }
         }
       },
@@ -481,7 +481,7 @@
         "icon_size": 22,
         "gradient_start": "#ffffff",
         "gradient_end": "#f4f4f4",
-        "primary_column_use_gradient": false,
+        "primary_column_use_gradient": true,
         "primary_column_color": "#121212",
         "primary_column_gradient_start": "#121212",
         "primary_column_gradient_end": "#404040",
