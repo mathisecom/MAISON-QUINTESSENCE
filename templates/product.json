@@ -413,7 +413,7 @@
       ],
       "name": "Chiffres clés",
       "settings": {
-        "background_color": "#F5F3EF",
+        "background_color": "#f7f7f7",
         "title_color": "#1a1a1a",
         "number_color": "#1a1a1a",
         "description_color": "#1a1a1a",
