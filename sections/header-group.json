@@ -31,7 +31,7 @@
         "message_yBXrga": {
           "type": "message",
           "settings": {
-            "text": "FIN DE L'OFFRE DÈS RUPTURE DE STOCK.",
+            "text": "6 ODEURS ICONIQUES POUR 79€",
             "url": ""
           }
         }
@@ -43,7 +43,7 @@
       ],
       "settings": {
         "enable_sticky": false,
-        "autoplay": false,
+        "autoplay": true,
         "cycle_speed": 6,
         "text_size": "text-xs",
         "navigation_mode": "arrows",
@@ -60,7 +60,7 @@
         "hide_on_scroll": false,
         "logo": "shopify://shop_images/Maison_Logo_Full_Black_4x_9fa1463a-bcee-47a5-a9d6-7dae1c8bf80d.png",
         "logo_max_width": 120,
-        "logo_mobile_max_width": 115,
+        "logo_mobile_max_width": 105,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",

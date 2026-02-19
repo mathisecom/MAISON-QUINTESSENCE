@@ -20,6 +20,7 @@
         },
         "vendor_AEcDJx": {
           "type": "vendor",
+          "disabled": true,
           "settings": {}
         },
         "title": {
@@ -62,6 +63,13 @@
         "eb_easy_bundle_builder_app_block_mix_and_match_bundle_khJ7zh": {
           "type": "shopify://apps/eb-easy-bundle-builder/blocks/app-block-mixAndMatchBundle/05b1325c-6303-4da5-8e2f-b13ab2a50e1a",
           "settings": {}
+        },
+        "liquid_9AtYq4": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"product-info__block-group feature-badge-list\" data-group-type=\"feature-badge-list\"><div class=\"product-info__block-item\" data-block-id=\"feature_with_icon_wgEhXb\" data-block-type=\"feature-with-icon\"><div class=\"feature-badge \" style=\"--text-color: 107 107 107; color: rgb(var(--text-color));--border-color: var(--text-color) / 0.15;\"><svg aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke-width=\"1.5\" width=\"16\" class=\"icon icon-picto-return\" viewBox=\"0 0 24 24\">\n      <path d=\"m1.25 15.08 2.207-3.384 3.385 2.206\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n      <path d=\"M13.13 2.5a9.525 9.525 0 1 1 0 19.049 9.68 9.68 0 0 1-9.673-9.853\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    </svg><p>Retours gratuit, même après ouverture</p></div></div><div class=\"product-info__block-item\" data-block-id=\"feature_with_icon_CDzV6d\" data-block-type=\"feature-with-icon\"><div class=\"feature-badge \" style=\"--text-color: 107 107 107; color: rgb(var(--text-color));--border-color: var(--text-color) / 0.15;\"><img src=\"//indescents.com/cdn/shop/files/hourglass.webp?v=1767110296&amp;width=512\" alt=\"\" srcset=\"//indescents.com/cdn/shop/files/hourglass.webp?v=1767110296&amp;width=16 16w, //indescents.com/cdn/shop/files/hourglass.webp?v=1767110296&amp;width=32 32w\" width=\"512\" height=\"512\" sizes=\"16px\" class=\"constrained-image\" style=\"--image-max-width: 16px\"><p>Senteur intense qui tient plus de 12 heures</p></div></div></div>"
+          }
         },
         "payment_terms": {
           "type": "payment_terms",
@@ -171,6 +179,7 @@
         "rating",
         "image_UTc73B",
         "eb_easy_bundle_builder_app_block_mix_and_match_bundle_khJ7zh",
+        "liquid_9AtYq4",
         "payment_terms",
         "separator",
         "description",
