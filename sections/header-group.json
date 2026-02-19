@@ -17,13 +17,29 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "Announce something here",
+            "text": "LIVRAISON OFFERTE À PARTIR DE 50€",
+            "url": ""
+          }
+        },
+        "message_7TjTAJ": {
+          "type": "message",
+          "settings": {
+            "text": "FIN DE L'OFFRE DÈS RUPTURE DE STOCK.",
+            "url": ""
+          }
+        },
+        "message_yBXrga": {
+          "type": "message",
+          "settings": {
+            "text": "FIN DE L'OFFRE DÈS RUPTURE DE STOCK.",
             "url": ""
           }
         }
       },
       "block_order": [
-        "message"
+        "message",
+        "message_7TjTAJ",
+        "message_yBXrga"
       ],
       "settings": {
         "enable_sticky": false,
