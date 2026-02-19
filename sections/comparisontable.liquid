@@ -1,0 +1,538 @@
+{% comment %}
+  Section: Tableau Comparatif (Comparison Table)
+  Compatible: Desktop & Mobile Responsive
+  Fully customizable: background, text, colors, images, logo
+{% endcomment %}
+
+<style>
+  .comparison-table {
+    padding: 80px 20px;
+    background-color: {{ section.settings.background_color }};
+  }
+
+  .comparison-table__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .comparison-table__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: {{ section.settings.title_color }};
+    margin-bottom: 60px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .comparison-table__wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+
+  .comparison-table__header {
+    display: contents;
+  }
+
+  .comparison-table__header-left,
+  .comparison-table__header-center,
+  .comparison-table__header-right {
+    padding: 30px 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 0.05em;
+  }
+
+  .comparison-table__header-left {
+    background: transparent;
+  }
+
+  .comparison-table__header-center {
+    background: {{ section.settings.brand_column_bg }};
+    color: {{ section.settings.brand_column_color }};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .comparison-table__logo {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .comparison-table__header-right {
+    background: {{ section.settings.competitor_column_bg }};
+    color: {{ section.settings.competitor_column_color }};
+  }
+
+  .comparison-table__row {
+    display: contents;
+  }
+
+  .comparison-table__cell {
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #e5e5e5;
+    min-height: 80px;
+  }
+
+  .comparison-table__cell--label {
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: {{ section.settings.label_color }};
+    background: {{ section.settings.label_bg }};
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  .comparison-table__cell--brand {
+    background: {{ section.settings.brand_column_bg }};
+    color: {{ section.settings.brand_column_color }};
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .comparison-table__cell--competitor {
+    background: {{ section.settings.competitor_column_bg }};
+    color: {{ section.settings.competitor_column_color }};
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .comparison-table__icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .comparison-table__icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .comparison-table__icon--check {
+    color: {{ section.settings.check_color }};
+  }
+
+  .comparison-table__icon--cross {
+    color: {{ section.settings.cross_color }};
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .comparison-table {
+      padding: 60px 15px;
+    }
+
+    .comparison-table__title {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+    }
+
+    .comparison-table__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .comparison-table__header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px solid #e5e5e5;
+    }
+
+    .comparison-table__header-left {
+      display: none;
+    }
+
+    .comparison-table__header-center,
+    .comparison-table__header-right {
+      flex: 1;
+      padding: 20px 10px;
+      font-size: 1rem;
+    }
+
+    .comparison-table__logo {
+      max-width: 120px;
+    }
+
+    .comparison-table__row {
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .comparison-table__cell {
+      padding: 20px 15px;
+      min-height: 60px;
+    }
+
+    .comparison-table__cell--label {
+      font-size: 0.95rem;
+      grid-column: 1 / 2;
+    }
+
+    .comparison-table__cell--brand {
+      grid-column: 2 / 3;
+      font-size: 1rem;
+    }
+
+    .comparison-table__cell--competitor {
+      grid-column: 3 / 4;
+      font-size: 1rem;
+    }
+
+    .comparison-table__icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .comparison-table__title {
+      font-size: 1.5rem;
+    }
+
+    .comparison-table__header-center,
+    .comparison-table__header-right {
+      font-size: 0.85rem;
+      padding: 15px 8px;
+    }
+
+    .comparison-table__logo {
+      max-width: 100px;
+    }
+
+    .comparison-table__cell {
+      padding: 15px 10px;
+    }
+
+    .comparison-table__cell--label {
+      font-size: 0.85rem;
+    }
+
+    .comparison-table__icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+</style>
+
+<section class="comparison-table">
+  <div class="comparison-table__container">
+    <h2 class="comparison-table__title">{{ section.settings.title }}</h2>
+
+    <div class="comparison-table__wrapper">
+      <!-- Header Row -->
+      <div class="comparison-table__header">
+        <div class="comparison-table__header-left"></div>
+        <div class="comparison-table__header-center">
+          {% if section.settings.brand_logo != blank %}
+            <img 
+              src="{{ section.settings.brand_logo | img_url: '300x' }}" 
+              alt="{{ section.settings.brand_name }}"
+              class="comparison-table__logo"
+              loading="lazy"
+            >
+          {% else %}
+            {{ section.settings.brand_name }}
+          {% endif %}
+        </div>
+        <div class="comparison-table__header-right">{{ section.settings.competitor_name }}</div>
+      </div>
+
+      <!-- Data Rows -->
+      {% for block in section.blocks %}
+        <div class="comparison-table__row">
+          <div class="comparison-table__cell comparison-table__cell--label">
+            {{ block.settings.label }}
+          </div>
+          <div class="comparison-table__cell comparison-table__cell--brand">
+            {% if block.settings.brand_value == 'check' %}
+              <span class="comparison-table__icon comparison-table__icon--check">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                </svg>
+              </span>
+            {% elsif block.settings.brand_value == 'cross' %}
+              <span class="comparison-table__icon comparison-table__icon--cross">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="currentColor"/>
+                </svg>
+              </span>
+            {% else %}
+              {{ block.settings.brand_value_text }}
+            {% endif %}
+          </div>
+          <div class="comparison-table__cell comparison-table__cell--competitor">
+            {% if block.settings.competitor_value == 'check' %}
+              <span class="comparison-table__icon comparison-table__icon--check">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                </svg>
+              </span>
+            {% elsif block.settings.competitor_value == 'cross' %}
+              <span class="comparison-table__icon comparison-table__icon--cross">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="currentColor"/>
+                </svg>
+              </span>
+            {% else %}
+              {{ block.settings.competitor_value_text }}
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Tableau Comparatif",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Général"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre",
+      "default": "NOTRE DIFFÉRENCE"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#E8E8E8"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "header",
+      "content": "Colonne de marque (centre)"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_logo",
+      "label": "Logo de la marque"
+    },
+    {
+      "type": "text",
+      "id": "brand_name",
+      "label": "Nom de la marque (si pas de logo)",
+      "default": "VAILLANT PARFUMS"
+    },
+    {
+      "type": "color",
+      "id": "brand_column_bg",
+      "label": "Couleur fond colonne marque",
+      "default": "#2C3E50"
+    },
+    {
+      "type": "color",
+      "id": "brand_column_color",
+      "label": "Couleur texte colonne marque",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Colonne concurrent (droite)"
+    },
+    {
+      "type": "text",
+      "id": "competitor_name",
+      "label": "Nom du concurrent",
+      "default": "PARFUMS CLASSIQUES"
+    },
+    {
+      "type": "color",
+      "id": "competitor_column_bg",
+      "label": "Couleur fond colonne concurrent",
+      "default": "#F5F5F5"
+    },
+    {
+      "type": "color",
+      "id": "competitor_column_color",
+      "label": "Couleur texte colonne concurrent",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "header",
+      "content": "Colonne des labels (gauche)"
+    },
+    {
+      "type": "color",
+      "id": "label_bg",
+      "label": "Couleur fond labels",
+      "default": "#F5F5F5"
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Couleur texte labels",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "header",
+      "content": "Icônes"
+    },
+    {
+      "type": "color",
+      "id": "check_color",
+      "label": "Couleur des coches (✓)",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "cross_color",
+      "label": "Couleur des croix (✕)",
+      "default": "#1a1a1a"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Ligne de comparaison",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label (texte à gauche)",
+          "default": "INGRÉDIENTS NATURELS"
+        },
+        {
+          "type": "select",
+          "id": "brand_value",
+          "label": "Valeur marque (colonne centre)",
+          "options": [
+            {
+              "value": "check",
+              "label": "Coche ✓"
+            },
+            {
+              "value": "cross",
+              "label": "Croix ✕"
+            },
+            {
+              "value": "text",
+              "label": "Texte personnalisé"
+            }
+          ],
+          "default": "check"
+        },
+        {
+          "type": "text",
+          "id": "brand_value_text",
+          "label": "Texte personnalisé marque (si sélectionné)",
+          "default": "+ de 12h",
+          "info": "Utilisé uniquement si 'Texte personnalisé' est sélectionné"
+        },
+        {
+          "type": "select",
+          "id": "competitor_value",
+          "label": "Valeur concurrent (colonne droite)",
+          "options": [
+            {
+              "value": "check",
+              "label": "Coche ✓"
+            },
+            {
+              "value": "cross",
+              "label": "Croix ✕"
+            },
+            {
+              "value": "text",
+              "label": "Texte personnalisé"
+            }
+          ],
+          "default": "cross"
+        },
+        {
+          "type": "text",
+          "id": "competitor_value_text",
+          "label": "Texte personnalisé concurrent (si sélectionné)",
+          "default": "~ 2 à 8h",
+          "info": "Utilisé uniquement si 'Texte personnalisé' est sélectionné"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tableau Comparatif",
+      "blocks": [
+        {
+          "type": "row",
+          "settings": {
+            "label": "INGRÉDIENTS NATURELS",
+            "brand_value": "check",
+            "competitor_value": "cross"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "LONGUE TENUE",
+            "brand_value": "text",
+            "brand_value_text": "+ de 12h",
+            "competitor_value": "text",
+            "competitor_value_text": "~ 2 à 8h"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "SAVOIR-FAIRE FRANÇAIS",
+            "brand_value": "check",
+            "competitor_value": "cross"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "RARETÉ DU PARFUM",
+            "brand_value": "text",
+            "brand_value_text": "unique",
+            "competitor_value": "text",
+            "competitor_value_text": "commun"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "ÉVEILLE LE DÉSIR",
+            "brand_value": "check",
+            "competitor_value": "cross"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "SILLAGE SINGULIER",
+            "brand_value": "check",
+            "competitor_value": "cross"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
