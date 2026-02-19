@@ -200,6 +200,61 @@
         "text_color": ""
       }
     },
+    "press_GHqQDN": {
+      "type": "press",
+      "blocks": {
+        "quote_8MyAAc": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/ELLE_Magazine_Logo.webp",
+            "logo_width": 70,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_nH3nBW": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Marie_Claire_Magazine_logo.svg_1.webp",
+            "logo_width": 70,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_G9LHYG": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Grazia-Logo_svg.webp",
+            "logo_width": 70,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "quote_8MyAAc",
+        "quote_nH3nBW",
+        "quote_G9LHYG"
+      ],
+      "name": "Press",
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "rgba(0,0,0,0)",
+        "logo_item_border": "rgba(0,0,0,0)"
+      }
+    },
     "slideshow_TRrV3k": {
       "type": "slideshow",
       "blocks": {
@@ -303,6 +358,7 @@
     "rich_text_y4eeK8",
     "featured_collection_itpndr",
     "rich_text_BYg6jK",
+    "press_GHqQDN",
     "slideshow_TRrV3k",
     "faq"
   ]
