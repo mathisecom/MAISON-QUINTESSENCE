@@ -50,7 +50,7 @@
           "settings": {
             "image": "shopify://shop_images/DE_2_2ad047e2-07a1-46b3-b386-252b4ca16ca3.jpg",
             "alignment": "start",
-            "max_width": 330
+            "max_width": 390
           }
         },
         "payment_terms": {
@@ -467,7 +467,7 @@
         "competitor_badge": "",
         "content_align": "center",
         "content_align_mobile": "center",
-        "layout_direction": "heading_first",
+        "layout_direction": "heading_first_vertical",
         "content_gap": 64,
         "column_width": 140,
         "column_radius": 16,
@@ -500,9 +500,9 @@
         "mobile_padding_top": 40,
         "mobile_padding_bottom": 12,
         "mobile_padding_sides": 16,
-        "width": "page",
-        "content_width": 1200,
-        "lazy": true
+        "width": "custom",
+        "content_width": 800,
+        "lazy": false
       }
     },
     "scrolling_text_WYazQL": {
