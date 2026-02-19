@@ -175,7 +175,7 @@
           "settings": {
             "image": "shopify://shop_images/DE_2_2ad047e2-07a1-46b3-b386-252b4ca16ca3.jpg",
             "alignment": "start",
-            "max_width": 310
+            "max_width": 500
           }
         },
         "button_H4DeFE": {
@@ -208,7 +208,7 @@
         "mobile_carousel_control": "dots",
         "enable_video_autoplay": true,
         "enable_video_looping": false,
-        "enable_image_zoom": true,
+        "enable_image_zoom": false,
         "max_image_zoom_level": 3,
         "background": "",
         "background_gradient": "",
