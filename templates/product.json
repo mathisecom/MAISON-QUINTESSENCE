@@ -427,6 +427,74 @@
         "button_color": "#ffffff"
       }
     },
+    "comparisontable_6CbNW6": {
+      "type": "comparisontable",
+      "blocks": {
+        "row_mKdxTk": {
+          "type": "row",
+          "settings": {
+            "label": "Parfums longue durée",
+            "brand_value": "check",
+            "brand_value_text": "+ de 12h",
+            "competitor_value": "cross",
+            "competitor_value_text": "~ 2 à 8h"
+          }
+        },
+        "row_xCghed": {
+          "type": "row",
+          "settings": {
+            "label": "identiques aux originaux",
+            "brand_value": "check",
+            "brand_value_text": "+ de 12h",
+            "competitor_value": "cross",
+            "competitor_value_text": "~ 2 à 8h"
+          }
+        },
+        "row_nTTM3a": {
+          "type": "row",
+          "settings": {
+            "label": "Sans danger pour la peau",
+            "brand_value": "check",
+            "brand_value_text": "+ de 12h",
+            "competitor_value": "cross",
+            "competitor_value_text": "~ 2 à 8h"
+          }
+        },
+        "row_VRPCX3": {
+          "type": "row",
+          "settings": {
+            "label": "satisfait ou remboursé",
+            "brand_value": "check",
+            "brand_value_text": "+ de 12h",
+            "competitor_value": "cross",
+            "competitor_value_text": "~ 2 à 8h"
+          }
+        }
+      },
+      "block_order": [
+        "row_mKdxTk",
+        "row_xCghed",
+        "row_nTTM3a",
+        "row_VRPCX3"
+      ],
+      "name": "Tableau Comparatif",
+      "settings": {
+        "title": "NOTRE DIFFÉRENCE",
+        "background_color": "#ffffff",
+        "title_color": "#000000",
+        "brand_logo": "shopify://shop_images/Maison_Logo_Full_White_4x_5ad12c82-9dee-478d-a9b8-c2d75df562b5.png",
+        "brand_name": "MAISON QUINTESSENCE",
+        "brand_column_bg": "#000000",
+        "brand_column_color": "#FFFFFF",
+        "competitor_name": "AUTRES",
+        "competitor_column_bg": "#ffffff",
+        "competitor_column_color": "#000000",
+        "label_bg": "#ffffff",
+        "label_color": "#000000",
+        "check_color": "#FFFFFF",
+        "cross_color": "#000000"
+      }
+    },
     "faq_CQ9dyd": {
       "type": "faq",
       "blocks": {
@@ -535,6 +603,7 @@
     "rich_text_imN6wB",
     "text_with_icons_mBF8EM",
     "chiffrescles_z8mDVk",
+    "comparisontable_6CbNW6",
     "faq_CQ9dyd",
     "rich_text_tPd8TT",
     "related-products"
