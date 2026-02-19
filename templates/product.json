@@ -104,7 +104,47 @@
             "icon": "none",
             "icon_width": 20,
             "title": "INGRÉDIENTS",
-            "content": "<p>Share some content to your customers about your products.</p>",
+            "content": "<p>Chaque parfum possède sa propre composition, mais voici l’essentiel :</p><ul><li><strong>Huiles essentielles premium</strong> → tenue longue et richesse olfactive<br/></li><li><strong>Bases alcool propres</strong> → application sûre et régulière<br/></li><li><strong>Blends travaillés avec précision</strong> → profils olfactifs proches des parfums de créateurs</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_text_rz8xyA": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "À PROPOS DE NOS PARFUMS",
+            "content": "<p>Nos fragrances sont élaborées avec des <strong>ingrédients premium</strong> et une attention extrême au détail.<br/><br/>Le résultat : les senteurs iconiques que tu aimes, <strong>sans l’étiquette à 300€</strong></p><ul><li><strong>Haute concentration en huiles</strong> = <strong>12h+</strong> de tenue<br/></li><li><strong>Ingrédients premium</strong> = une qualité qui rivalise avec les originaux<br/></li><li><strong>Simplicité, sérieux et transparence</strong> = pas de compromis<br/></li></ul><p>Sentir incroyable. Dépenser moins. Rester libre.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_4tNPft": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "NOTES OLFACTIVES",
+            "content": "<p>Chaque parfum raconte une histoire. Voici comment ils sont construits :</p><ul><li><strong>Notes de tête</strong> : la première impression — fraîches, lumineuses, accrocheuses<br/></li><li><strong>Notes de cœur</strong> : l’âme du parfum — épices chaudes, bois crémeux, verts profonds…<br/></li><li><strong>Notes de fond</strong> : ce qui reste — riche, profond, inoubliable (musc, ambre, bois…)<br/></li></ul><p>Chaque senteur a sa fiche détaillée, mais une chose reste constante :<br/><br/><strong>chaque parfum est travaillé en couches, comme les originaux que tu connais.</strong></p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_3whFpr": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "FAQ",
+            "content": "<p><strong>Q : Est-ce que vos parfums sentent vraiment comme les parfums de créateurs ?</strong><br/><br/><strong>R : Oui.</strong> Nos compositions sont travaillées pour reproduire les senteurs d’origine presque à l’identique. Même les passionnés ont du mal à faire la différence.</p><p><strong>Q : Pourquoi vos prix sont si bas ?</strong><br/><br/><strong>R : Parce que l’essentiel, c’est le parfum.</strong> En évitant les endorsements, le marketing exagéré et les marges surdimensionnées, nous rendons l’iconique accessible.</p><p><strong>Q : Combien de temps durent vos parfums ?</strong><br/><br/><strong>R : Longtemps.</strong> Grâce à une forte concentration en huiles parfumées, ils tiennent <strong>12h+</strong>. Du matin jusqu’au soir.</p><p><strong>Q : Et si je n’aime pas une senteur ?</strong><br/><br/><strong>R : Aucun souci.</strong> Nous proposons une <strong>garantie 100% satisfait ou remboursé</strong>. Si ça ne te plaît pas, on te rembourse. Sans question.</p><p><strong>Q : Vos produits sont-ils sûrs ?</strong><br/><br/><strong>R : Oui.</strong> Nous utilisons des ingrédients propres et de haute qualité, exempts de substances nocives.</p><p><strong>Q : Comment choisir le bon parfum ?</strong><br/><br/><strong>R : Tu peux commencer par les incontournables</strong> (ex : Baccarat Rouge 540, Aventus…) <strong>ou tester nos échantillons</strong> pour explorer tranquillement.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_bk8T6m": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "LIVRAISON, ECHANGES & RETOURS",
+            "content": "<p>Pour toute question concernant votre commande, veuillez nous écrire à <strong>contact@maisonquintessence.com</strong>. Nous sommes là pour vous aider !</p><p><strong>Échanges & Retours :</strong></p><p>Vous disposez de 30 jours à compter de la date d’expédition pour effectuer un retour ou un échange.</p>",
             "page": ""
           }
         }
@@ -123,7 +163,11 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "collapsible_text_LVVmVW"
+        "collapsible_text_LVVmVW",
+        "collapsible_text_rz8xyA",
+        "collapsible_text_4tNPft",
+        "collapsible_text_3whFpr",
+        "collapsible_text_bk8T6m"
       ],
       "settings": {
         "full_width": true,
