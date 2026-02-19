@@ -113,6 +113,58 @@
         "text_color": ""
       }
     },
+    "featured_product_eGCJwb": {
+      "type": "featured-product",
+      "blocks": {
+        "title_Fy9L9p": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "quantity_selector_JYD3qn": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "button_H4DeFE": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/coffret-6-parfums",
+            "text": "CHOISIR MES PARFUMS",
+            "size": "xl",
+            "style": "fill",
+            "stretch": true,
+            "background": "#000000",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "title_Fy9L9p",
+        "quantity_selector_JYD3qn",
+        "button_H4DeFE"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "full_width": true,
+        "product": "coffret-6-parfums",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
     "rich_text_y4eeK8": {
       "type": "rich-text",
       "blocks": {
@@ -442,6 +494,7 @@
   "order": [
     "slideshow_cL8jYq",
     "text_with_icons_MgzRL8",
+    "featured_product_eGCJwb",
     "rich_text_y4eeK8",
     "featured_collection_itpndr",
     "rich_text_BYg6jK",
