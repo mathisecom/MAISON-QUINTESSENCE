@@ -200,6 +200,49 @@
         "text_color": ""
       }
     },
+    "slideshow_TRrV3k": {
+      "type": "slideshow",
+      "blocks": {
+        "image_DizKAY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Parfums_-_312Saint-Honore_5-Mood2-1.progressive_1_b97ca3be-a3c9-43d2-b570-bd305ac9b085.webp",
+            "mobile_image": "shopify://shop_images/Parfums_-_312Saint-Honore_4-Mood1-1.progressive_4660381f-9acd-4b3a-b3b0-7b44af040580.webp",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 12,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_DizKAY"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "show_initial_transition": false,
+        "image_size": "md",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#F2F2F2",
+        "background_gradient": ""
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -260,6 +303,7 @@
     "rich_text_y4eeK8",
     "featured_collection_itpndr",
     "rich_text_BYg6jK",
+    "slideshow_TRrV3k",
     "faq"
   ]
 }
