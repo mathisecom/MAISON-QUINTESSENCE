@@ -12,9 +12,11 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "vendor",
-          "settings": {}
+        "liquid_EfHkhq": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"main-product__block main-product__block-custom_liquid\">\n          <div class=\"m-product-text\">\n            <div class=\"main-product__block main-product__block-custom_liquid\">\n          <div class=\"m-product-text\">\n            <div class=\"main-product__block main-product__block-custom_liquid\">\n  <div class=\"m-product-text\">\n    <div class=\"product-info__liquid\">\n      <a class=\"image-size\" style=\"display: flex; align-items: center; gap: 8px;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0776/3751/7627/files/avis.png?v=1687213619\" alt=\"Étoiles\" width=\"63\" height=\"13\">\n        <span class=\"text-size\">Excellent <b>4.8/5</b> sur 3,380 avis</span>\n      </a>\n    </div>\n  </div>\n</div>\n          </div>\n        \n</div>\n          </div>\n        \n</div>"
+          }
         },
         "title": {
           "type": "title",
@@ -37,6 +39,14 @@
           "disabled": true,
           "settings": {
             "show_empty": false
+          }
+        },
+        "image_UTc73B": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DE_2_2ad047e2-07a1-46b3-b386-252b4ca16ca3.jpg",
+            "alignment": "start",
+            "max_width": 310
           }
         },
         "payment_terms": {
@@ -86,11 +96,12 @@
         }
       },
       "block_order": [
-        "vendor",
+        "liquid_EfHkhq",
         "title",
         "badges",
         "price",
         "rating",
+        "image_UTc73B",
         "payment_terms",
         "separator",
         "description",
@@ -104,7 +115,7 @@
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
+        "mobile_carousel_control": "dots",
         "enable_video_autoplay": false,
         "enable_video_looping": true,
         "enable_image_zoom": true,
