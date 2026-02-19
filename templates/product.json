@@ -373,6 +373,60 @@
         "text_color": ""
       }
     },
+    "chiffrescles_z8mDVk": {
+      "type": "chiffrescles",
+      "blocks": {
+        "stat_a3GaTj": {
+          "type": "stat",
+          "settings": {
+            "number": "93%",
+            "description": "Ont déclaré que nos parfums durent plus de 12 heures."
+          }
+        },
+        "stat_8nRJKK": {
+          "type": "stat",
+          "settings": {
+            "number": "96%",
+            "description": "Ont déclaré que leurs flacons sentent exactement comme les originaux."
+          }
+        },
+        "stat_afAkYU": {
+          "type": "stat",
+          "settings": {
+            "number": "94%",
+            "description": "Ont déclaré avoir reçu des compliments sur leur parfum."
+          }
+        },
+        "stat_EHDdQU": {
+          "type": "stat",
+          "settings": {
+            "number": "91%",
+            "description": "Ont déclaré être revenus acheter plusieurs flacons."
+          }
+        }
+      },
+      "block_order": [
+        "stat_a3GaTj",
+        "stat_8nRJKK",
+        "stat_afAkYU",
+        "stat_EHDdQU"
+      ],
+      "name": "Chiffres clés",
+      "settings": {
+        "background_color": "#F5F3EF",
+        "title_color": "#1a1a1a",
+        "number_color": "#1a1a1a",
+        "description_color": "#1a1a1a",
+        "footnote_color": "#999999",
+        "main_image": "shopify://shop_images/image-gen_46_1_c4cd099f-d3a7-4ce8-ac8a-124dcabb1ac4.png",
+        "title": "Chiffres clés",
+        "footnote": "* Résultats obtenus à partir de plus de 10 000 enquêtes post-achat",
+        "button_text": "",
+        "button_link": "",
+        "button_bg": "#1a1a1a",
+        "button_color": "#ffffff"
+      }
+    },
     "faq_CQ9dyd": {
       "type": "faq",
       "blocks": {
@@ -480,6 +534,7 @@
     "trustpilot_VYXHyA",
     "rich_text_imN6wB",
     "text_with_icons_mBF8EM",
+    "chiffrescles_z8mDVk",
     "faq_CQ9dyd",
     "rich_text_tPd8TT",
     "related-products"
