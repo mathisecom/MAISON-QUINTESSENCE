@@ -118,6 +118,12 @@
             "payment_button_text_color": ""
           }
         },
+        "liquid_gEgRjC": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"product-info__block-group feature-badge-list\" data-group-type=\"feature-badge-list\">\n\n  <div class=\"product-info__block-item\" data-block-id=\"feature_with_icon_wgEhXb\" data-block-type=\"feature-with-icon\">\n    <div class=\"feature-badge\" style=\"display: flex; align-items: center; gap: 8px; --text-color: 107 107 107; color: rgb(var(--text-color)); --border-color: var(--text-color) / 0.15;\">\n      <svg aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke-width=\"1.5\" width=\"16\" class=\"icon icon-picto-return\" viewBox=\"0 0 24 24\" style=\"flex-shrink: 0;\">\n        <path d=\"m1.25 15.08 2.207-3.384 3.385 2.206\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n        <path d=\"M13.13 2.5a9.525 9.525 0 1 1 0 19.049 9.68 9.68 0 0 1-9.673-9.853\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n      </svg>\n      <p style=\"margin: 0;\">Retours gratuit, même après ouverture</p>\n    </div>\n  </div>\n\n  <div class=\"product-info__block-item\" data-block-id=\"feature_with_icon_CDzV6d\" data-block-type=\"feature-with-icon\">\n    <div class=\"feature-badge\" style=\"display: flex; align-items: center; gap: 8px; --text-color: 107 107 107; color: rgb(var(--text-color)); --border-color: var(--text-color) / 0.15;\">\n      <img src=\"//indescents.com/cdn/shop/files/hourglass.webp?v=1767110296&width=512\" alt=\"\" srcset=\"//indescents.com/cdn/shop/files/hourglass.webp?v=1767110296&width=16 16w, //indescents.com/cdn/shop/files/hourglass.webp?v=1767110296&width=32 32w\" width=\"512\" height=\"512\" sizes=\"16px\" class=\"constrained-image\" style=\"--image-max-width: 16px; width: 16px; height: 16px; flex-shrink: 0;\">\n      <p style=\"margin: 0;\">Odeur intense qui tient +12 heures</p>\n    </div>\n  </div>\n\n</div>"
+          }
+        },
         "collapsible_text_LVVmVW": {
           "type": "collapsible_text",
           "settings": {
@@ -186,6 +192,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "liquid_gEgRjC",
         "collapsible_text_LVVmVW",
         "collapsible_text_rz8xyA",
         "collapsible_text_4tNPft",
