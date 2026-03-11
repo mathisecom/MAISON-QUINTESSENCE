@@ -443,6 +443,11 @@
   "shopify": {
     "links": {
       "powered_by_shopify": "‎ ‎ "
+    },
+    "checkout": {
+      "alternative_payment_method_banner": {
+        "or": "① Stock limité! Commandez avant qu'il ne soit trop tard."
+      }
     }
   }
 }
